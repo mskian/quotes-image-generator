@@ -10,10 +10,13 @@ if (el) {
 function postData(event) {
     event.preventDefault();
     let getQuotes = document.querySelector('#getquotes').value;
+    let getAuthor = document.querySelector('#author').value;
     const getInput = sanitizeHtml(getQuotes) || 'Your Quotes';
+    const authorInput =  sanitizeHtml(getAuthor) || '';
     const random_id = Math.floor(1000 + Math.random() * 9000);
     const basename = 'quotes-image-' + random_id;
     const word = getInput;
+    const author = authorInput;
     Toastify({
         text: 'Created',
         duration: 2000,
@@ -21,7 +24,7 @@ function postData(event) {
         gravity: 'bottom',
         position: 'right',
         style: {
-            background: '#27ae60',
+            background: '#833471',
         },
     }).showToast();
 
@@ -40,6 +43,8 @@ function postData(event) {
             <p style="white-space: pre-line" class="mt-2 text-base font-bold text-center text-zinc-700">
             ${word}
             </p>
+            <br />
+            <p class="mt-2 text-sm font-bold text-center text-zinc-700">${author}</p>
           </div>
           </div>
           </div>

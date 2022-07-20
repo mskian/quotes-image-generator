@@ -21,20 +21,23 @@
                 <p class="max-w-md mx-auto mt-4 text-center text-yellow-700 font-bold">Free Quotes image Generator - Easy to use Just like Writing in Paper.</p>
                 <br />
                 <form id="postData" method="post" accept-charset="UTF-8" class="p-8 mt-6 mb-0 space-y-4 rounded-lg shadow-2xl bg-fuchsia-200" onsubmit="return false;">
-                    <p class="text-center">Write your Quotes</p>
                     <div>
                         <div class="relative mt-1">
                             <textarea
-                                class="form-control block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
+                                class="placeholder:text-blue-500 placeholder:text-center form-control block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
                                 id="getquotes"
                                 name="getquotes"
                                 rows="10m"
+                                minlength="30"
                                 maxlength="250"
-                                placeholder="Your Quotes"
+                                placeholder="Write Your Quotes"
                                 required
                                 autocomplete="off"
                             ></textarea>
                         </div>
+                    </div>
+                    <div class="relative mt-1">
+                        <input type="text" id="author" name="author" class="w-full p-4 pr-12 text-sm border-gray-200 rounded-lg shadow-sm text-lg" placeholder="Author Name (Optional)" minlength="10" maxlength="40" autocomplete="off" />
                     </div>
                     <button type="submit" class="block w-full px-5 py-3 text-lg font-medium text-white bg-purple-600 rounded-lg">Create Now</button>
                 </form>
