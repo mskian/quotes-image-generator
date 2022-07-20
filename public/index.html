@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="theme-color" content="#ffffff" />
+        <link rel="shortcut icon" href="/icon.png" type="image/png" />
+        <title>Quotes image Generator</title>
+        <meta name="description" content="Free Quotes image Generator - Easy to use Just like Writing in Paper." />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link rel="preconnect" href="https://cdn.jsdelivr.net" />
+        <link rel="stylesheet" type="text/css" href="/build/app.css" />
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css" />
+    </head>
+    <body>
+        <div class="min-h-screen px-4 py-16 mx-auto sm:px-6 lg:px-8 bg-gray-200">
+            <div class="max-w-lg mx-auto">
+                <h1 class="text-sm font-bold text-center text-green-600 sm:text-2xl">Quotes image Generator</h1>
+                <p class="max-w-md mx-auto mt-4 text-center text-yellow-700 font-bold">Free Quotes image Generator - Easy to use Just like Writing in Paper.</p>
+                <br />
+                <form id="postData" method="post" accept-charset="UTF-8" class="p-8 mt-6 mb-0 space-y-4 rounded-lg shadow-2xl bg-fuchsia-200" onsubmit="return false;">
+                    <p class="text-center">Write your Quotes</p>
+                    <div>
+                        <div class="relative mt-1">
+                            <textarea
+                                class="form-control block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
+                                id="getquotes"
+                                name="getquotes"
+                                rows="10m"
+                                maxlength="250"
+                                placeholder="Your Quotes"
+                                required
+                                autocomplete="off"
+                            ></textarea>
+                        </div>
+                    </div>
+                    <button type="submit" class="block w-full px-5 py-3 text-lg font-medium text-white bg-purple-600 rounded-lg">Create Now</button>
+                </form>
+                <br />
+                <div id="notice"></div>
+                <div id="result"></div>
+            </div>
+            <br />
+        </div>
+        <script src="/build/bundle.js"></script>
+    </body>
+</html>
