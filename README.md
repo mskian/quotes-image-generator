@@ -6,6 +6,7 @@ Free Quotes image Generator - Easy to use Just like Writing in Paper.
 
 - HTML/CSS and Javascript
 - HTML Canvas
+- Alpine.js
 - tailwindcss - Front-end Styling
 - rollup - Minify the Bundled JS
 - Node `http-server` - Test the Site Locally

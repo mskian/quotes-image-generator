@@ -1,6 +1,9 @@
 import html2canvas from 'html2canvas';
 import Toastify from 'toastify-js';
 import sanitizeHtml from 'sanitize-html';
+import Alpine from 'alpinejs';
+window.Alpine = Alpine;
+Alpine.start();
 
 var el = document.querySelector('#postData');
 if (el) {
@@ -11,8 +14,10 @@ function postData(event) {
     event.preventDefault();
     let getQuotes = document.querySelector('#getquotes').value;
     let getAuthor = document.querySelector('#author').value;
+    let getColor = document.querySelector('#getcolor').value;
     const getInput = sanitizeHtml(getQuotes) || 'Your Quotes';
-    const authorInput =  sanitizeHtml(getAuthor) || '';
+    const authorInput = sanitizeHtml(getAuthor) || '';
+    const quotesColor = getColor || '#E9D5FF';
     const random_id = Math.floor(1000 + Math.random() * 9000);
     const basename = 'quotes-image-' + random_id;
     const word = getInput;
@@ -39,8 +44,8 @@ function postData(event) {
     document.getElementById('notice').innerHTML = `<div class="container mx-md"> 
             <div class="flex items-center justify-center">
             <div id="copy-wish">
-            <div class="h-96 w-96 p-16 py-16 bg-purple-200">
-            <p style="white-space: pre-line" class="mt-2 text-base font-bold text-center text-zinc-700">
+            <div class="h-96 w-96 p-16 py-16" style="background-color: ${quotesColor}">
+            <p style="white-space: pre-line;" class="mt-2 text-base font-bold text-center text-zinc-700">
             ${word}
             </p>
             <br />
