@@ -5,6 +5,14 @@ import Alpine from 'alpinejs';
 window.Alpine = Alpine;
 Alpine.start();
 
+const link = document.querySelector('link[rel="canonical"]')
+    ? document.querySelector('link[rel="canonical"]')
+    : document.createElement('link');
+const pathname = typeof window !== 'undefined' ? window.location.href : '';
+link.setAttribute('rel', 'canonical');
+link.setAttribute('href', pathname);
+document.head.appendChild(link);
+
 var el = document.querySelector('#postData');
 if (el) {
     el.addEventListener('submit', postData);
@@ -33,15 +41,10 @@ function postData(event) {
         },
     }).showToast();
 
-    const link = document.querySelector('link[rel=\'canonical\']')
-        ? document.querySelector('link[rel=\'canonical\']')
-        : document.createElement('link');
-    const pathname = typeof window !== 'undefined' ? window.location.href : '';
-    link.setAttribute('rel', 'canonical');
-    link.setAttribute('href', pathname);
-    document.head.appendChild(link);
     document.getElementById('notice').style.display = 'block';
-    document.getElementById('notice').innerHTML = `<div class="container mx-md"> 
+    document.getElementById(
+        'notice'
+    ).innerHTML = `<div class="container mx-md"> 
             <div class="flex items-center justify-center">
             <div id="copy-wish">
             <div class="h-96 w-96 p-16 py-16" style="background-color: ${quotesColor}">
@@ -78,7 +81,7 @@ function postData(event) {
             </div>`;
                 document.getElementById('notice').style.display = 'none';
             })
-            .catch((e) => {
+            .catch(e => {
                 console.log(e);
             });
     }

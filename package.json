@@ -9,8 +9,9 @@
     "dev": "rollup -c -w",
     "start": "http-server ./public -c-1 --p 3001",
     "lint": "eslint . --ext .js --cache",
-    "lintfix": "eslint --fix index.js",
-    "css": "tailwindcss -m -i ./styles/tailwind.css -o public/build/app.css"
+    "lintfix": "eslint . --ext .js --fix",
+    "css": "tailwindcss -m -i ./styles/tailwind.css -o public/build/app.css",
+    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md,html}\""
   },
   "repository": {
     "type": "git",
@@ -35,6 +36,7 @@
     "eslint": "^8.19.0",
     "http-server": "^14.1.1",
     "postcss": "^8.4.14",
+    "prettier": "^2.7.1",
     "rollup": "^2.76.0",
     "rollup-plugin-livereload": "^2.0.5",
     "rollup-plugin-terser": "^7.0.2",
