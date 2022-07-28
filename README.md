@@ -17,6 +17,7 @@ Free Quotes image Generator - Easy to use Just like Writing in Paper.
 - Eslint - Fix the Lint Error
 - Prettier - Beautify the Code files
 - Slugify - Slugify the User input and Convert to URL
+- Progressive Web App
 - Cloudflare Pages for Hosting - `npx wrangler pages publish public`
 
 ## Installation 📦
@@ -68,6 +69,15 @@ yarn lintfix
 
 ```sh
 yarn Format
+```
+
+## Tools
+
+Generate Icons
+
+```sh
+npx pwa-asset-generator Icon-512.png --opaque false --type png -f -c
+npx pwa-asset-generator Icon-512.png --opaque false --icon-only --favicon --type png
 ```
 
 ## LICENSE ☑
