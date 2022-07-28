@@ -18,14 +18,14 @@ Free Quotes image Generator - Easy to use Just like Writing in Paper.
 - Prettier - Beautify the Code files
 - Slugify - Slugify the User input and Convert to URL
 - Progressive Web App
-- Cloudflare Pages for Hosting - `npx wrangler pages publish public`
+- Cloudflare Pages for Hosting - `npx wrangler pages publish public --branch production`
 
 ## Installation 📦
 
-- Add funtions, logic's and Modules - `/lib/app.js`
-- Edit Home page - `index.html`
+- Add funtions, logic's and Modules - `/lib/maker.js`
+- Edit Home page - `/public/index.html`
 - CSS Styling - `/styles/tailwind.css`
-- Build file - `main.js`
+- Build file - `index.js`
 
 - Clone this repo or Download
 
