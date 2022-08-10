@@ -36,7 +36,7 @@ export default {
     output: {
         sourcemap: true,
         format: 'iife',
-        name: 'quotesimagemaker',
+        name: 'tamilquotesimagemaker',
         file: 'public/build/bundle.js',
     },
     plugins: [

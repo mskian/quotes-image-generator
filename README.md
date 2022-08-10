@@ -1,10 +1,12 @@
-# Quotes image Generator
+# Tamil Quotes image Generator
+
+[![build-script](https://github.com/mskian/quotes-image-generator/actions/workflows/build.yml/badge.svg)](https://github.com/mskian/quotes-image-generator/actions/workflows/build.yml)  
 
 ⚡ Rollupjs | ✨ Tailwind CSS | 📸 HTML Canvas  | 🎩 Alpine.js | 🌩 Cloudflare Pages  
 
-Free Quotes image Generator - Easy to use Just like Writing in Paper.
+Free Tamil Quotes and Kavithai image Generator - Easy to use Just like Writing in Paper.
 
-> Quotes image Maker - Quotes Application  
+> Tamil Quotes image Maker - Tamil Quotes Application  
 
 ## Methods Used ⚙
 
