@@ -148,3 +148,36 @@
     outline: none;
     user-select: none;
   }
+.quotes-box {
+  width: 74vw;
+  height: 74vw;
+}
+.quotes-container {
+  display: flex;
+  position: fixed;
+  align-items: center;
+  justify-content: center;
+}
+.quotes-container p {
+  color: #222222;
+  font-size: 18px;
+  font-family: 'Baloo Thambi 2', cursive;
+  font-weight: 700;
+  line-height: 1.6;
+  text-align: center;
+  white-space: pre-wrap;
+}
+.quotes-footer {
+  position:absolute;
+  bottom:0;
+  width:100%;
+  height: 50px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  color: #222222;
+  font-size: 16px;
+  font-family: 'Baloo Thambi 2', cursive;
+  font-weight: 700;
+  line-height: 1.6;
+}
