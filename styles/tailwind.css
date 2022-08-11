@@ -149,8 +149,8 @@
     user-select: none;
   }
 .quotes-box {
-  width: 74vw;
-  height: 74vw;
+  width: 72vw;
+  height: 72vw;
 }
 .quotes-container {
   display: flex;
@@ -160,7 +160,7 @@
 }
 .quotes-container p {
   color: #222222;
-  font-size: 21px;
+  font-size: 20px;
   font-family: 'Baloo Thambi 2', cursive;
   font-weight: 700;
   line-height: 1.6;
@@ -176,7 +176,7 @@
   align-items: center;
   justify-content: center;
   color: #222222;
-  font-size: 16px;
+  font-size: 17px;
   font-family: 'Baloo Thambi 2', cursive;
   font-weight: 700;
   line-height: 1.6;
