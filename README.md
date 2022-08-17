@@ -4,7 +4,7 @@
 
 ⚡ Rollupjs | ✨ Tailwind CSS | 📸 HTML Canvas  | 🎩 Alpine.js | 🌩 Cloudflare Pages  
 
-Free Tamil Quotes and Kavithai image Generator - Easy to use Just like Writing in Paper.
+Free Tamil Quotes Generator and Kavithai image Generator - Easy to use Just like Writing in Paper - Just add kavithai or Quotes Choose a Background Color and Generate your image.  
 
 > Tamil Quotes image Maker - Tamil Quotes Application  
 
