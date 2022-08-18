@@ -1,6 +1,6 @@
 # Tamil Quotes image Generator
 
-[![build-script](https://github.com/mskian/quotes-image-generator/actions/workflows/build.yml/badge.svg)](https://github.com/mskian/quotes-image-generator/actions/workflows/build.yml)  
+[![build-script](https://github.com/mskian/quotes-image-generator/actions/workflows/build.yml/badge.svg)](https://github.com/mskian/quotes-image-generator/actions/workflows/build.yml) [![cloudflare-pages](https://github.com/mskian/quotes-image-generator/actions/workflows/deploy.yml/badge.svg)](https://github.com/mskian/quotes-image-generator/actions/workflows/deploy.yml)  
 
 ⚡ Rollupjs | ✨ Tailwind CSS | 📸 HTML Canvas  | 🎩 Alpine.js | 🌩 Cloudflare Pages  
 
