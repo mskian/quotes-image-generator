@@ -32,7 +32,7 @@
     "@rollup/plugin-json": "^4.1.0",
     "@rollup/plugin-node-resolve": "^14.1.0",
     "@tailwindcss/forms": "^0.5.3",
-    "autoprefixer": "^10.4.9",
+    "autoprefixer": "^10.4.11",
     "eslint": "^8.23.1",
     "http-server": "^14.1.1",
     "postcss": "^8.4.16",
