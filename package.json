@@ -43,7 +43,7 @@
     "tailwindcss": "^3.2.1"
   },
   "dependencies": {
-    "alpinejs": "^3.10.4",
+    "alpinejs": "^3.10.5",
     "html2canvas": "^1.4.1",
     "sanitize-html": "^2.7.3",
     "toastify-js": "^1.12.0"
