@@ -3,6 +3,7 @@ import resolve from '@rollup/plugin-node-resolve';
 import livereload from 'rollup-plugin-livereload';
 import { terser } from 'rollup-plugin-terser';
 import json from '@rollup/plugin-json';
+import replace from '@rollup/plugin-replace';
 
 const production = !process.env.ROLLUP_WATCH;
 
@@ -46,6 +47,10 @@ export default {
         commonjs({ include: 'node_modules/**' }),
         json({
             compact: true,
+        }),
+        replace({
+            'process.env.NODE_ENV': JSON.stringify('production'),
+            preventAssignment: true,
         }),
         // In dev mode, call `npm run start` once
         // the bundle has been generated
