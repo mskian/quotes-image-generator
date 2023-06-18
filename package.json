@@ -34,7 +34,7 @@
     "@rollup/plugin-replace": "^5.0.2",
     "@tailwindcss/forms": "^0.5.3",
     "autoprefixer": "^10.4.14",
-    "eslint": "^8.42.0",
+    "eslint": "^8.43.0",
     "http-server": "^14.1.1",
     "postcss": "^8.4.24",
     "prettier": "^2.8.8",
