@@ -26,4 +26,4 @@ jobs:
         with:
           apiToken: ${{ secrets.CF_API_TOKEN }}
           accountId: ${{ secrets.CF_ACCOUNT_ID }}
-          command: pages publish public --branch production --project-name=quotesmaker --commit-dirty=true
+          command: pages deploy public --branch production --project-name=quotesmaker --commit-dirty=true
