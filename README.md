@@ -20,7 +20,7 @@ Free Tamil Quotes Generator and Kavithai image Generator - Easy to use Just like
 - Prettier - Beautify the Code files
 - Slugify - Slugify the User input and Convert to URL
 - Progressive Web App
-- Cloudflare Pages for Hosting - `npx wrangler pages publish public --branch production`
+- Cloudflare Pages for Hosting - `npx wrangler pages deploy public --branch production`
 
 ## Installation 📦
 
