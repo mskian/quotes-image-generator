@@ -14,16 +14,30 @@ jobs:
     name: Node ${{ matrix.node }}
     steps:
       - uses: actions/checkout@v4.0.0
+      -  name: Cache node modules
+         uses: actions/cache@v3.3.2
+         with:
+          path: node_modules
+          key: ${{ runner.OS }}-build-${{ hashFiles('**/yarn.lock') }}
+          restore-keys: |
+            ${{ runner.OS }}-build-${{ env.cache-name }}-
+            ${{ runner.OS }}-build-
+            ${{ runner.OS }}-
       - uses: actions/setup-node@v3.8.1
         with:
           node-version: ${{ matrix.node }}
-          cache: 'yarn'
       - run: yarn install
       - run: yarn css
       - run: yarn build
-      - name: Deploy
-        uses: cloudflare/wrangler-action@v3.1.0
-        with:
-          apiToken: ${{ secrets.CF_API_TOKEN }}
-          accountId: ${{ secrets.CF_ACCOUNT_ID }}
-          command: pages deploy public --branch production --project-name=quotesmaker --commit-dirty=true
+      - name: Deploy to cloudflare pages
+        run: |
+          npm install wrangler -g
+          wrangler pages deploy public --branch production --project-name=quotesmaker --commit-dirty=true
+          env:
+            CF_API_TOKEN: ${{ secrets.CF_API_TOKEN }}
+            CF_ACCOUNT_ID: ${{ secrets.CF_ACCOUNT_ID }}
+        #uses: cloudflare/wrangler-action@v3.1.0
+        #with:
+        #  apiToken: ${{ secrets.CF_API_TOKEN }}
+        #  accountId: ${{ secrets.CF_ACCOUNT_ID }}
+        #  command: pages deploy public --branch production --project-name=quotesmaker --commit-dirty=true
