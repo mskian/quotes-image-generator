@@ -34,8 +34,8 @@ jobs:
           npm install wrangler -g
           wrangler pages deploy public --branch production --project-name=quotesmaker --commit-dirty=true
           env:
-            CF_API_TOKEN: ${{ secrets.CF_API_TOKEN }}
-            CF_ACCOUNT_ID: ${{ secrets.CF_ACCOUNT_ID }}
+            CLOUDFLARE_API_TOKEN: ${{ secrets.CF_API_TOKEN }}
+            CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CF_ACCOUNT_ID }}
         #uses: cloudflare/wrangler-action@v3.1.0
         #with:
         #  apiToken: ${{ secrets.CF_API_TOKEN }}
