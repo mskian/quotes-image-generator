@@ -20,7 +20,7 @@ jobs:
           ${{ runner.OS }}-build-${{ env.cache-name }}-
           ${{ runner.OS }}-build-
           ${{ runner.OS }}-
-    - uses: actions/setup-node@v4.0.0
+    - uses: actions/setup-node@v4.0.1
       with:
          node-version: '18.x'
     - name: use yarn
