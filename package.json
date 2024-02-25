@@ -46,7 +46,7 @@
   "dependencies": {
     "alpinejs": "^3.13.5",
     "html2canvas": "^1.4.1",
-    "sanitize-html": "^2.11.0",
+    "sanitize-html": "^2.12.1",
     "toastify-js": "^1.12.0"
   }
 }
