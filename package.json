@@ -37,7 +37,7 @@
     "eslint": "^9.16.0",
     "http-server": "^14.1.1",
     "postcss": "^8.4.49",
-    "prettier": "^3.3.3",
+    "prettier": "^3.4.1",
     "rollup": "^4.27.4",
     "rollup-plugin-livereload": "^2.0.5",
     "rollup-plugin-terser": "^7.0.2",
