@@ -22,7 +22,7 @@ jobs:
           ${{ runner.OS }}-
     - uses: actions/setup-node@v4.3.0
       with:
-         node-version: '18.20.7'
+         node-version: '18.20.8'
     - name: use yarn
       run: |
        yarn install
